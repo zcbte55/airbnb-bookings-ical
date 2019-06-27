@@ -2,7 +2,6 @@ import express from "express"
 import ical from "node-ical"
 import axios from 'axios'
 import icalGenerator from 'ical-generator'
-import calendars from "./calendars.json"
 
 const app = express()
 const port = parseInt(process.env.PORT || "3000")
