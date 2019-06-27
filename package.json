@@ -1,5 +1,5 @@
 {
-  "name": "airbnb-cal",
+  "name": "airbnb-bookings-ical",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
