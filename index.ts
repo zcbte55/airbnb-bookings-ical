@@ -5,7 +5,7 @@ import icalGenerator from 'ical-generator'
 import calendars from "./calendars.json"
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = parseInt(process.env.PORT || "3000")
 
 app.get("/", async (_req, res) => {
     const cal = icalGenerator({
@@ -34,6 +34,6 @@ app.get("/", async (_req, res) => {
 });
 
 // start the Express server
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     console.log(`server started at http://localhost:${port}`)
 });
